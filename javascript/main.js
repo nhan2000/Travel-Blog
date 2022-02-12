@@ -120,3 +120,11 @@ var swiper = new Swiper(".clients-slider", {
         },
     },
 });
+const searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.add('active');
+}
+document.querySelector('#close-search').onclick = () =>{
+    searchForm.classList.remove('active');
+}
