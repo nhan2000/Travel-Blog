@@ -338,3 +338,113 @@ section {
         }
     }
 }
+
+.packages {
+    background: #eee;
+
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(32rem, 1fr));
+        gap: 1.5rem;
+
+        .box {
+            text-align: center;
+            background: #fff;
+            border: 0.2rem solid $primary-color;
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+            border-radius: .5rem;
+            &:hover {
+                background: $primary-color;
+                .content > *{
+                    color: #fff;
+                }
+
+                .btn {
+                    border-color: #fff;
+                    &:hover {
+                        background-color: #fff;
+                        color: $primary-color;
+
+                        
+                    }
+                }
+            }
+            .image {
+                height: 25rem;
+                padding: 2rem;
+                padding-bottom: 0;
+                border-radius: .5rem;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: .5rem;
+                }
+
+            }
+            .content {
+                padding: 2rem;
+                h3 {
+                    font-size: 2rem;
+                    color: $primary-color;
+                }
+                p {
+                    font-size: 1.5rem;
+                    color: $primary-color;
+                    padding: 1rem 0;
+                    line-height: 2;
+                }
+                .price {
+                    font-size: 2rem;
+                    color: #219150;
+                }
+            }
+        }
+    }
+
+
+}
+
+.reviews {
+    .slide {
+        .text {
+            padding: 2rem;
+            font-size: 1.5rem;
+            font-style: italic;
+            background: #eee;
+            border-radius: .5rem;
+            color: $primary-color;
+            line-height: 2;
+            position: relative;
+            z-index: 0;
+            margin-bottom: 3rem;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -1.5rem;
+                left: .7rem;
+                height: 3rem;
+                width: 3rem;
+                background: #eee;
+                transform: rotate(45deg);
+            }
+        }
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            h3 {
+                font-size: 2rem;
+                color: $primary-color;
+            }
+            span {
+                color: #219150;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
