@@ -9,7 +9,7 @@ $primary-color:#10221b;
     outline: none;
     border: none;
     text-decoration: none;
-    // transition-timing-function: .2s ;
+    transition-timing-function: .2s ;
     transition: .2s linear;
 }
 html {
@@ -17,6 +17,9 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
     overflow-x: hidden;
+}
+h3 ,a, .btn{
+    text-transform: capitalize;
 }
 
 section {
@@ -45,6 +48,7 @@ section {
     margin-bottom: 2.5rem;
     font-size: 4rem;
     color: $primary-color;
+    text-transform: capitalize;
 }
 
 .header {
@@ -448,3 +452,197 @@ section {
         }
     }
 }
+
+.services{
+    background: #eee;
+    
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+        gap: 1.5rem;
+        .box {
+            text-align: center;
+            padding: 2rem;
+            border: 0.2rem solid $primary-color;
+            border-radius: .5rem;
+            background: #fff;
+        
+            &:hover {
+                background: $primary-color;
+
+                img {
+                    filter: invert(1);
+                }
+                p{
+                    color: #fff;
+                }
+                .btn {
+                    border-color: #fff;
+                    color: #fff;
+                    &:hover {
+                        background: #fff;
+                        color: $primary-color;
+                    }
+                }
+            }
+            img {
+                height: 20rem;
+                margin-bottom: 1rem;
+
+            }
+            h3 {
+                font-size: 2rem;
+                color: #219150;
+            }
+            p {
+                font-size: 1.5rem;
+                color: $primary-color;
+            }
+
+        }
+    }
+}
+
+.blogs {
+    .slide {
+        text-align: center;
+        padding: 2rem;
+        img {
+            height: 25rem;
+            width: 100%;
+            object-fit: cover;
+            border-radius: .5rem;
+        }
+        .icons {
+            background: $primary-color;
+            border-radius: .5rem;
+            padding: 1rem;
+            position: relative;
+            top: -2rem;
+            display: inline-block;
+            a {
+                font-size: 1.4rem;
+                color: #fff;
+                margin: 0 1rem;
+                &:hover {
+                    color: #219150;
+                }
+                i{
+                    padding-right: .5rem;
+                    color: #219150;
+                }
+            }
+        }
+        h3 {
+            font-size: 2rem;
+            color: $primary-color;
+        }
+        p{
+            font-size: 1.4rem;
+            padding: 1rem 0;
+            line-height: 2;
+            color: $primary-color;
+        }
+    }
+}
+
+.newsletter {
+    background: #eee;
+
+    .content {
+        max-width: 70rem;
+        margin: 1rem auto;
+        text-align: center;
+        p {
+            font-size: 1.5rem;
+            line-height: 2;
+            color: $primary-color;
+        }
+        form {
+            margin-top: 2rem;
+            background: #fff;
+            border-radius: 5rem;
+            border: 0.2rem solid $primary-color;
+            padding: .7rem;
+            display: flex;
+
+            .email {
+                width: 100%;
+                background: none;
+                text-transform: none;
+                font-size: 1.6rem;
+                color: $primary-color;
+                padding: 0 1.3rem;
+            }
+            .btn {
+                margin-top: 0;
+                border-radius: 5rem;
+                background: $primary-color;
+                color: #fff;
+                &:hover {
+                    background: none;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.clients {
+    .slide {
+        text-align: center;
+        img {
+            height: 12rem;
+        }
+    }
+}
+
+.footer {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../asset/images/footer-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 1.5rem;
+        .box{
+            
+            h3 {
+                font-size: 2rem;
+                padding: 1.5rem 0;
+                color: #fff;
+            }
+            a {
+                display: block;
+                font-size: 1.4rem;
+                color: #fff;
+                padding: 1rem 0;
+                i{
+                    color: #219150;
+                    padding-right: .5rem;
+                }
+                &:hover {
+                    i {
+                        padding-right: 2rem;
+                    }
+                }
+            }
+        } 
+
+            
+    }
+    .credit {
+        text-align: center;
+        margin-top: 2.5rem;
+        padding: 1rem;
+        padding-top: 2.5rem;
+        font-size: 2rem;
+        color: #fff;
+        span {
+            color: #219150;
+        }
+    }
+}
+

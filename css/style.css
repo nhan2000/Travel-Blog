@@ -7,6 +7,7 @@
   outline: none;
   border: none;
   text-decoration: none;
+  transition-timing-function: 0.2s;
   transition: 0.2s linear;
 }
 
@@ -15,6 +16,10 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
   overflow-x: hidden;
+}
+
+h3, a, .btn {
+  text-transform: capitalize;
 }
 
 section {
@@ -41,6 +46,7 @@ section {
   margin-bottom: 2.5rem;
   font-size: 4rem;
   color: #10221b;
+  text-transform: capitalize;
 }
 
 .header {
@@ -396,6 +402,180 @@ section {
 .reviews .slide .user span {
   color: #219150;
   font-size: 1.5rem;
+}
+
+.services {
+  background: #eee;
+}
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 1.5rem;
+}
+.services .box-container .box {
+  text-align: center;
+  padding: 2rem;
+  border: 0.2rem solid #10221b;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+.services .box-container .box:hover {
+  background: #10221b;
+}
+.services .box-container .box:hover img {
+  filter: invert(1);
+}
+.services .box-container .box:hover p {
+  color: #fff;
+}
+.services .box-container .box:hover .btn {
+  border-color: #fff;
+  color: #fff;
+}
+.services .box-container .box:hover .btn:hover {
+  background: #fff;
+  color: #10221b;
+}
+.services .box-container .box img {
+  height: 20rem;
+  margin-bottom: 1rem;
+}
+.services .box-container .box h3 {
+  font-size: 2rem;
+  color: #219150;
+}
+.services .box-container .box p {
+  font-size: 1.5rem;
+  color: #10221b;
+}
+
+.blogs .slide {
+  text-align: center;
+  padding: 2rem;
+}
+.blogs .slide img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.blogs .slide .icons {
+  background: #10221b;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+  top: -2rem;
+  display: inline-block;
+}
+.blogs .slide .icons a {
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+.blogs .slide .icons a:hover {
+  color: #219150;
+}
+.blogs .slide .icons a i {
+  padding-right: 0.5rem;
+  color: #219150;
+}
+.blogs .slide h3 {
+  font-size: 2rem;
+  color: #10221b;
+}
+.blogs .slide p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  line-height: 2;
+  color: #10221b;
+}
+
+.newsletter {
+  background: #eee;
+}
+.newsletter .content {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+.newsletter .content p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #10221b;
+}
+.newsletter .content form {
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 5rem;
+  border: 0.2rem solid #10221b;
+  padding: 0.7rem;
+  display: flex;
+}
+.newsletter .content form .email {
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: #10221b;
+  padding: 0 1.3rem;
+}
+.newsletter .content form .btn {
+  margin-top: 0;
+  border-radius: 5rem;
+  background: #10221b;
+  color: #fff;
+}
+.newsletter .content form .btn:hover {
+  background: none;
+  color: #10221b;
+}
+
+.clients .slide {
+  text-align: center;
+}
+.clients .slide img {
+  height: 12rem;
+}
+
+.footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../asset/images/footer-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  color: #fff;
+}
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer .box-container .box a i {
+  color: #219150;
+  padding-right: 0.5rem;
+}
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+.footer .credit {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+.footer .credit span {
+  color: #219150;
 }
 
 /*# sourceMappingURL=style.css.map */
